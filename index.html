@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokopedia Clone</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS Sendiri -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success">tokopedia</a>
+
+      <form class="d-flex w-50">
+        <input class="form-control me-2" type="search" placeholder="Cari di Tokopedia">
+        <button class="btn btn-outline-success" type="submit">Cari</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <h3 class="mb-4">Produk Pilihan</h3>
+    <div class="row" id="product-list"></div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Sendiri -->
+  <script src="script.js"></script>
+</body>
+</html>
