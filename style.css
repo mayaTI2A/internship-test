@@ -22,6 +22,11 @@ a {
   color: #03ac0e;
 }
 
+.logo-img {
+  height: 30px;   
+  width: auto;
+}
+
 .nav-divider {
   width: 1px;
   height: 28px;
@@ -58,7 +63,7 @@ a {
 
 .location-bar {
   background-color: #ffffff;
-  border-bottom: 1px solid #eee;
+  border-bottom: none;
   padding: 8px 0;
   font-size: 14px;
 }
