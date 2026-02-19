@@ -7,33 +7,251 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- CSS Sendiri -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-     <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-success">tokopedia</a>
+  <!-- TOP BAR -->
+  <div class="topbar">
+  <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
 
-      <form class="d-flex w-50">
-        <input class="form-control me-2" type="search" placeholder="Cari di Tokopedia">
-        <button class="btn btn-outline-success" type="submit">Cari</button>
-      </form>
+    <div class="left-top d-flex align-items-center gap-2">
+      <i class="bi bi-phone"></i>
+      <span class="fw-bold">Gratis Ongkir + Banyak Promo</span>
+      <span>belanja di aplikasi</span>
+      <span class="ms-1">›</span>
     </div>
-  </nav>
 
-  <div class="container my-4">
-    <h3 class="mb-4">Produk Pilihan</h3>
-    <div class="row" id="product-list"></div>
+    <div class="right-top d-flex gap-3">
+      <a href="#">Tentang Tokopedia</a>
+      <a href="#">Mulai Berjualan</a>
+      <a href="#">Promo</a>
+      <a href="#">Tokopedia Care</a>
+    </div>
+
+  </div>
   </div>
 
-  <!-- Bootstrap JS -->
+     <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container-fluid px-4 d-flex align-items-center justify-content-between">
+
+    <!-- KIRI -->
+    <div class="d-flex align-items-center gap-4 flex-grow-1">
+
+      <a class="navbar-brand fw-bold text-success m-0">tokopedia</a>
+      <a class="kategori-nav">Kategori</a>
+
+      <form class="d-flex position-relative flex-grow-1 mx-3 me-5">
+        <span class="search-icon">
+          <i class="bi bi-search"></i>
+        </span>
+
+        <input class="form-control ps-5" type="search" placeholder="Cari di Tokopedia">
+      </form>
+
+    </div>
+
+
+    <!-- KANAN -->
+    <div class="d-flex align-items-center">
+
+      <a href="#" class="text-dark fs-5 me-4">
+        <i class="bi bi-cart3"></i>
+      </a>
+
+      <span class="nav-divider mx-4"></span>
+
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-success">Masuk</button>
+        <button class="btn btn-success">Daftar</button>
+      </div>
+
+    </div>
+
+  </div>
+  </nav>
+
+  <section class="location-bar">
+    <div class="container d-flex justify-content-end align-items-center">
+
+      <div class="location-info d-flex align-items-center gap-2">
+        <i class="bi bi-geo-alt"></i>
+        <span>Dikirim ke <strong>Jakarta Pusat</strong></span>
+        <i class="bi bi-chevron-down small"></i>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="hero-banner">
+    <div class="container">
+      <img src="images/banner.png" class="img-fluid rounded-3 banner-img" alt="Promo Banner">
+    </div>
+  </section>
+
+  <div class="container my-4" id="produk-list"></div>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- JS Sendiri -->
   <script src="script.js"></script>
+
+<section class="fitur-section">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
+
+      <!-- Transparan -->
+      <div class="col-md-4 mb-4 mb-md-0 d-flex align-items-start gap-3">
+        <img src="images/transparan.png" class="fitur-img">
+        <div>
+          <h5 class="fitur-title">Transparan</h5>
+          <p class="fitur-desc">
+            Pembayaran Anda baru diteruskan ke penjual setelah barang Anda terima
+          </p>
+        </div>
+      </div>
+
+      <!-- Aman -->
+      <div class="col-md-4 mb-4 mb-md-0 d-flex align-items-start gap-3">
+        <img src="images/aman.png" class="fitur-img">
+        <div>
+          <h5 class="fitur-title">Aman</h5>
+          <p class="fitur-desc">
+            Bandingkan review untuk berbagai online shop terpercaya se-Indonesia
+          </p>
+        </div>
+      </div>
+
+      <!-- Escrow -->
+      <div class="col-md-4 d-flex align-items-start gap-3">
+        <img src="images/fasilitas.png" class="fitur-img">
+        <div>
+          <h5 class="fitur-title">
+            Fasilitas Escrow <br> Gratis
+          </h5>
+          <p class="fitur-desc">
+            Fasilitas Escrow (Rekening Bersama) Tokopedia tidak dikenakan biaya tambahan
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+  <footer class="footer">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Tokopedia -->
+      <div class="col-md-2">
+        <h6>Tokopedia</h6>
+        <ul>
+          <li><a href="#">Tentang Tokopedia</a></li>
+          <li><a href="#">Hak Kekayaan Intelektual</a></li>
+          <li><a href="#">Karir</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Tokopedia Affiliate Program</a></li>
+          <li><a href="#">Tokopedia B2B Digital</a></li>
+          <li><a href="#">Tokopedia Marketing Solutions</a></li>
+          <li><a href="#">Kalkulator Indeks Masa Tubuh</a></li>
+          <li><a href="#">Tokopedia Farma</a></li>
+          <li><a href="#">Promo Hari Ini</a></li>
+          <li><a href="#">Beli Lokal</a></li>
+          <li><a href="#">Promo Guncang</a></li>
+        </ul>
+      </div>
+
+      <!-- Beli -->
+      <div class="col-md-2">
+        <h6>Beli</h6>
+        <ul>
+          <li><a href="#">Tagihan & Top Up</a></li>
+          <li><a href="#">Tokopedia COD</a></li>
+          <li><a href="#">Bebas Ongkir</a></li>
+        </ul>
+
+        <h6 class="mt-4">Jual</h6>
+        <ul>
+          <li><a href="#">Pusat Edukasi Seller</a></li>
+          <li><a href="#">Daftar Mall</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-md-2">
+        <h6>Bantuan dan Panduan</h6>
+        <ul>
+          <li><a href="#">Tokopedia Care</a></li>
+          <li><a href="#">Syarat & Ketentuan</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+
+      <!-- Keamanan -->
+      <div class="col-md-3">
+        <h6>Keamanan & Privasi</h6>
+
+        <div class="security-img">
+          <img src="images/keamananprivasi.png">
+        </div>
+
+        <h6 class="mt-4">Ikuti Kami</h6>
+        <div class="social-icons">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-youtube"></i>
+        </div>
+      </div>
+
+      <!-- App -->
+      <div class="col-md-3">
+        <h6>Nikmati keuntungan spesial di aplikasi:</h6>
+
+        <ul class="app-benefit">
+          <li>Diskon 70% hanya di aplikasi</li>
+          <li>Promo khusus aplikasi</li>
+          <li>Gratis Ongkir tiap hari</li>
+        </ul>
+
+        <p class="small">Buka aplikasi dengan scan QR atau klik tombol:</p>
+
+        <div class="app-download-wrapper d-flex align-items-start gap-3">
+
+        <div class="app-image">
+          <img src="images/qr.png" alt="QR Code">
+        </div>
+
+        <div class="app-download d-flex flex-column gap-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="store-btn">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" class="store-btn">
+        </div>
+
+      </div>
+        <a href="#" class="learn-more">Pelajari Selengkapnya →</a>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+
+  <div>
+    © 2009 - 2026, PT Tokopedia. All Rights Reserved.
+  </div>
+
+  <div class="language-switch mt-2 mt-md-0">
+    <button class="lang-btn active">Indonesia</button>
+    <button class="lang-btn">English</button>
+  </div>
+  </div>
+  </div>
+</footer>
 </body>
 </html>

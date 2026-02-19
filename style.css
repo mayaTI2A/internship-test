@@ -1,24 +1,260 @@
 body {
-  background-color: #f5f5f5;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.card {
-  border-radius: 10px;
-  transition: 0.3s;
+a {
+  text-decoration: none;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+.topbar {
+  background: #f5f5f5;
+  font-size: 12px;
+  padding: 6px 0;
 }
 
-.card img {
-  height: 200px;
+.left-top,
+.right-top a {
+  color: #555;
+}
+
+.right-top a:hover {
+  color: #03ac0e;
+}
+
+.nav-divider {
+  width: 1px;
+  height: 28px;
+  background-color: #ddd;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+}
+
+.kategori-nav {
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.kategori-bar button {
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 13px;
+  border: 1px solid #eee;
+}
+
+.kategori-bar .active {
+  background: #03ac0e;
+  color: #fff;
+  border-color: #03ac0e;
+}
+
+.location-bar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.location-info {
+  cursor: pointer;
+  color: #333;
+}
+
+.location-info i {
+  font-size: 16px;
+  color: #555;
+}
+
+.location-info strong {
+  font-weight: 600;
+}
+
+.product-card {
+  border-radius: 12px;
+  border: 1px solid #eee;
+  transition: 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+.product-img {
+  height: 160px;
   object-fit: contain;
 }
 
-.card-title {
-  font-size: 14px;
-  height: 38px;
+.product-title {
+  font-size: 13px;
+  line-height: 1.3;
+  height: 36px;
   overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  margin: 2px 0;
+}
+
+.product-meta,
+.product-rating {
+  font-size: 11px;
+  color: #777;
+}
+
+#product-list {
+  row-gap: 16px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  font-size: 13px;
+  color: #888;
+}
+
+.fitur-section {
+  background: #fff;
+  padding: 50px 0;
+}
+
+.fitur-img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.fitur-title {
+  font-weight: 700;
+  color: #03ac0e;
+  margin-bottom: 8px;
+}
+
+.fitur-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.footer {
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 50px 0 20px;
+  font-size: 14px;
+}
+
+.footer h6 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 6px;
+}
+
+.footer ul li a {
+  color: #666;
+  font-size: 13px;
+}
+
+.footer ul li a:hover {
+  color: #03ac0e;
+}
+
+.social-icons i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #555;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: #03ac0e;
+}
+
+.app-download img {
+  height: 38px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  font-size: 13px;
+  color: #777;
+}
+
+.security-img img {
+  width: 90px;
+  height: auto;
+}
+
+.footer-bottom {
+  font-size: 13px;
+  color: #777;
+  padding: 10px 0;
+}
+
+.app-download-wrapper {
+  margin-top: 8px;
+}
+
+.app-image img {
+  width: 80px;   
+  border-radius: 8px;
+}
+
+.app-download {
+  display: flex;
+  flex-direction: column;
+}
+
+.store-btn {
+  width: 140px; 
+  height: auto;
+}
+
+.language-switch {
+  background: #f3f4f5;
+  padding: 3px;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 4px;
+}
+
+.lang-btn {
+  border: none;
+  background: transparent;
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #555;
+}
+
+.lang-btn.active {
+  background: #03ac0e;
+  color: white;
+  font-weight: 500;
 }
